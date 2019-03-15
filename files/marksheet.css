@@ -1,0 +1,234 @@
+.cgpa{
+    color: white;
+}
+h1{
+    text-align: center;
+    color: #ffed36;
+    margin-left: 2.5%;
+
+}
+input[type="text"]{
+    background-color: rgb(255, 255, 255);
+    border-style: inherit;
+    width:100%;
+}
+fieldset{
+    border: inset #6413f1;
+    width: 82%;
+}
+
+
+img{
+    image-resolution:200dpcm;
+    background-color: #00e5ff;
+    margin-right: 5%;
+    margin-left:auto;
+    float:right;
+    height:100px;
+    width:100px;
+    border-color:#6413f1;
+
+}
+
+#it{
+    color: rgb(0, 255, 20);
+}
+
+#mark tr:nth-child(even) {
+    background-color: #333f9a;
+}
+#mark tr:nth-child(odd) {
+    background-color: #4632af;
+}
+h1{
+    font-size: 30px;
+    color: #d2fff8;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+table{
+    width:100%;
+    table-layout: fixed;
+}
+.tbl-header{
+    background-color: rgba(255,255,255,0.3);
+}
+.tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+@media all {
+    body{
+        background: -webkit-linear-gradient(left, #c4a23a, #c449a6);
+        background: linear-gradient(to right, #2f60c4, #c43f71);
+        font-family: 'Roboto', sans-serif;
+    }
+    * {
+        -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+        color-adjust: exact !important;                 /*Firefox*/
+    }
+}
+body{
+    background: -webkit-linear-gradient(left, #c4a23a, #c449a6);
+    background: linear-gradient(to right, #2f60c4, #c43f71);
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+    margin-top: 40px;
+    padding: 10px;
+    clear: left;
+    text-align: center;
+    font-size: 12px;
+    font-family: arial;
+    color: #fff;
+}
+.made-with-love i {
+    font-style: normal;
+    color: #F50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+.made-with-love a {
+    color: #fff;
+    text-decoration: none;
+}
+.made-with-love a:hover {
+    text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+@media print {
+    .print{
+        display :  none;
+    }
+}
+button.print-button {
+    width: 100px;
+    height: 100px;
+}
+span.print-icon, span.print-icon::before, span.print-icon::after, button.print-button:hover .print-icon::after {
+    border: solid 4px #333;
+}
+span.print-icon::after {
+    border-width: 2px;
+}
+
+button.print-button {
+    position: relative;
+    padding: 0;
+    border: 0;
+
+    border: none;
+    background: transparent;
+}
+
+span.print-icon, span.print-icon::before, span.print-icon::after, button.print-button:hover .print-icon::after {
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+span.print-icon {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin-top: 20%;
+
+    width: 60%;
+    height: 35%;
+    background: #fff;
+    border-radius: 20% 20% 0 0;
+}
+
+span.print-icon::before {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 12%;
+    right: 12%;
+    height: 110%;
+
+    transition: height .2s .15s;
+}
+
+span.print-icon::after {
+    content: " ";
+    position: absolute;
+    top: 55%;
+    left: 12%;
+    right: 12%;
+    height: 0%;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: 70% 90%;
+    background-position: center;
+    background-image: linear-gradient(
+            to top,
+            #fff 0, #fff 14%,
+            #333 14%, #333 28%,
+            #fff 28%, #fff 42%,
+            #333 42%, #333 56%,
+            #fff 56%, #fff 70%,
+            #333 70%, #333 84%,
+            #fff 84%, #fff 100%
+    );
+
+    transition: height .2s, border-width 0s .2s, width 0s .2s;
+}
+
+button.print-button:hover {
+    cursor: pointer;
+}
+
+button.print-button:hover .print-icon::before {
+    height:0px;
+    transition: height .2s;
+}
+button.print-button:hover .print-icon::after {
+    height:120%;
+    transition: height .2s .15s, border-width 0s .16s;
+}
