@@ -1,1 +1,1 @@
-web:java -jar build/libs/sample-*.jar
+web:java -jar build/libs/*.jar
