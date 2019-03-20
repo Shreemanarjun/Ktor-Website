@@ -23,8 +23,8 @@ import java.awt.SystemColor.window
 import java.io.File
 
 fun main() {
-    embeddedServer(Netty,watchPaths = listOf("untitled5"),port = 8080,module = Application::module).start(true)
-}
+     val port=Integer.valueOf(System.getenv("PORT"))
+    embeddedServer(Netty,port,watchPaths = listOf("Ktor-Website"),module = Application::module).start(true)
 
 fun Application.module() {
 
