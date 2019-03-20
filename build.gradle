@@ -38,7 +38,7 @@ dependencies {
     compile "org.jetbrains:kotlin-css-jvm:1.0.0-pre.31-kotlin-1.2.41"
     compile "io.ktor:ktor-client-core:$ktor_version"
     compile "io.ktor:ktor-client-core-jvm:$ktor_version"
-    testCompile "io.ktor:ktor-server-tests:$ktor_version"
+    //testCompile "io.ktor:ktor-server-tests:$ktor_version"
 }
 task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
