@@ -1,1 +1,1 @@
-web:java -jar build/libs/*.jar
+web: ./gradlew run
