@@ -1,1 +1,1 @@
-web:java -jar build/libs/Ktor-Website-*.jar
+web:java -jar build/libs/sample-*.jar
