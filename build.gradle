@@ -40,3 +40,5 @@ dependencies {
     compile "io.ktor:ktor-client-core-jvm:$ktor_version"
     testCompile "io.ktor:ktor-server-tests:$ktor_version"
 }
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
